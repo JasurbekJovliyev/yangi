@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(104, 104, 254);
+  /* overflow-y: hidden; */
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.Box{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  margin: 200px auto;
+  perspective: 1000px;
+  ---deft:90px;
+  animation: animatsiya 3s ease infinite;
+  transition: 4s ease;
+}
+@keyframes animatsiya{
+  0%{
+    transform: rotateX(0) rotateY(0);
+  }
+  100%{
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+}
+.box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  
+}
+.Box:hover{
+  ---deft:120px;
+  animation-play-state: paused;
+}
+.box1{
+  transform: rotateY(0) translateZ(var(---deft));
+}
+.box2{
+  transform: rotateY(90deg) translateZ(var(---deft));
+}
+.box3{
+  transform: rotateY(180deg) translateZ(var(---deft));
+}
+.box4{
+  transform: rotateY(-90deg) translateZ(var(---deft));
+}
+.box5{
+  transform: rotateX(90deg) translateZ(var(---deft));
+}
+.box6{
+  transform: rotateX(-90deg) translateZ(var(---deft));
+}
